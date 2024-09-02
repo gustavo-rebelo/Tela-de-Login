@@ -1,0 +1,90 @@
+body {
+    font-family: sans-serif;
+    background-image: linear-gradient(100deg, rgb(171, 48, 144), rgb(255, 61, 72));
+    overflow: hidden;
+}
+
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255);
+    border-radius: 15px;
+    padding: 15px;
+    color: rgb(0, 0, 0);
+    width: 30%;
+    height: 90%;
+}
+
+fieldset {
+    border: .5px solid rgba(0, 0, 0, 0.5);
+    margin: 20px;
+}
+
+legend {
+    border: 0px solid rgba(0, 0, 0, 0.596);;
+    padding: 10px;
+    text-align: center;
+    background-image: linear-gradient(100deg, rgb(171, 48, 144), rgb(255, 61, 72));
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+.input-box {
+    position: relative;
+}
+
+.input-user {
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    outline: none;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+.label-input {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-user:focus ~ .label-input,
+.input-user:valid ~ .label-input {
+    top: -15px;
+    font-size: 12px;
+    color: rgb(0, 0, 0, .5);
+}
+
+#data-nascimento {
+    border: none;
+    background-color: rgb(128, 128, 128, .3);
+    padding: 8px;
+    outline: none;
+    border-radius: 5px;
+    font-size: 12px;
+    color: rgb(39, 39, 39);
+}
+
+#submit {
+    background-image: linear-gradient(100deg, rgb(171, 48, 144), rgb(255, 61, 72));
+    border: none;
+    outline: none;
+    padding: 8px;
+    border-radius: 5px;
+    width: 100%;
+    color: white;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-image: linear-gradient(100deg, rgb(171, 48, 144), rgb(255, 61, 72));
+    transition: 2s;
+    color: rgb(253, 253, 253);
+    border: none;
+}

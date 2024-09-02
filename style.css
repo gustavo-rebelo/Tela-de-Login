@@ -1,0 +1,96 @@
+body {
+    font-family: sans-serif;
+    background-image: linear-gradient(100deg, rgb(171, 48, 144), rgb(255, 61, 72));
+}
+
+.container {
+    background-color: rgba(255, 255, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px 50px;
+    border-radius: 1rem;
+    width: 20%;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    width: 100%;
+    text-align: center;
+}
+
+button {
+    background-image: linear-gradient(100deg, rgb(171, 48, 144), rgb(255, 61, 72));
+    border: none;
+    border-radius: 3px;
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+    padding: 8px 8px;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-image: linear-gradient(100deg, rgb(171, 48, 144), rgb(255, 61, 72));
+    cursor: pointer;
+}
+
+.cadastre-se {
+    color: rgb(0, 0, 0);
+    width: 100%;
+    text-align: center;
+}
+
+a {
+    color: rgb(0, 0, 0);
+    line-height: 2;
+}
+
+a:hover {
+    color: rgb(171, 48, 144,);
+    cursor: pointer;
+}
+
+.input-box {
+    position: relative;
+}
+
+.input-user {
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    outline: none;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+.label-input {
+    position: absolute;
+    color: rgb(0, 0, 0);
+    top: 0%;
+    left: 0%;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-user:focus ~ .label-input,
+.input-user:valid ~ .label-input {
+    top: -20px;
+    font-size: 15px;
+    color: rgb(0, 0, 0, .5);
+}
+
+.esqueceu-senha {
+    text-align: center;
+    letter-spacing: 1px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.esqueceu-senha:hover {
+    transition: .5s;
+    color: rgb(0, 0, 0, .8);
+}
